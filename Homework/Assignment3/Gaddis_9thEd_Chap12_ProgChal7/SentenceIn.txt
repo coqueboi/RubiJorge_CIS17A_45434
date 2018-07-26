@@ -1,0 +1,2 @@
+This is a test sentence. This program tests letter cases. this Sentence has Capitals whEre it sHouldn't.
+The prograM shouLd ID where capitAls go at The beginning of a Sentence and should make all other Capitals LOWERCASE.
