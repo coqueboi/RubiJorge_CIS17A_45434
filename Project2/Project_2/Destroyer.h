@@ -14,7 +14,7 @@
 #ifndef DESTROYER_H
 #define DESTROYER_H
 
-class Destroyer {
+class Destroyer : public Ship {
 public:
     Destroyer();
     Destroyer(const Destroyer& orig);

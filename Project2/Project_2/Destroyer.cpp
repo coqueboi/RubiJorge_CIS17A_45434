@@ -14,9 +14,20 @@
 #include "Destroyer.h"
 
 Destroyer::Destroyer() {
+    name = "Destroyer";
+    length = 2;
+    orient = rand() % 2;
+    hp = 2;
+    coords[0] = rand() % 10;
+    coords[1] = rand() % 10;
 }
 
 Destroyer::Destroyer(const Destroyer& orig) {
+    name = orig.name;
+    length = orig.length;
+    orient = orig.orient;
+    hp = orig.hp;
+    coords = orig.coords;
 }
 
 Destroyer::~Destroyer() {

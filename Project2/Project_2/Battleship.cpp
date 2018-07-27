@@ -14,9 +14,20 @@
 #include "Battleship.h"
 
 Battleship::Battleship() {
+    name = "Battleship";
+    length = 4;
+    orient = rand() % 2;
+    hp = 4;
+    coords[0] = rand() % 10;
+    coords[1] = rand() % 10;
 }
 
 Battleship::Battleship(const Battleship& orig) {
+    name = orig.name;
+    length = orig.length;
+    orient = orig.orient;
+    hp = orig.hp;
+    coords = orig.coords;
 }
 
 Battleship::~Battleship() {

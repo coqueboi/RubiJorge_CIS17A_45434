@@ -14,9 +14,20 @@
 #include "Cruiser.h"
 
 Cruiser::Cruiser() {
+    name = "Cruiser";
+    length = 3;
+    orient = rand() % 2;
+    hp = 3;
+    coords[0] = rand() % 10;
+    coords[1] = rand() % 10;
 }
 
 Cruiser::Cruiser(const Cruiser& orig) {
+    name = orig.name;
+    length = orig.length;
+    orient = orig.orient;
+    hp = orig.hp;
+    coords = orig.coords;
 }
 
 Cruiser::~Cruiser() {

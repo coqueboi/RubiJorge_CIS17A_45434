@@ -1,8 +1,7 @@
 /* 
  * File:   main.cpp
- * Author: Name
- * Created on Month Day, Year, Time
- * Purpose: 
+ * Author: Jorge Rubi
+ * Purpose: Project 2 - Battleship Revamped x 2
  */
  
 //System Libraries Here
@@ -18,13 +17,8 @@ using namespace std;
  
 //Program Execution Begins Here
 int main(int argc, char** argv) {
-    //Declare all Variables Here
-     
-    //Input or initialize values Here
-     
-    //Process/Calculations Here
-     
-    //Output Located Here
+    //Seed random number
+    srand(static_cast<unsigned int>(time(0)));
  
     //Exit
     return 0;

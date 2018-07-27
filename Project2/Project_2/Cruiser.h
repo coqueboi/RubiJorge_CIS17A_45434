@@ -14,7 +14,7 @@
 #ifndef CRUISER_H
 #define CRUISER_H
 
-class Cruiser {
+class Cruiser : public Ship {
 public:
     Cruiser();
     Cruiser(const Cruiser& orig);

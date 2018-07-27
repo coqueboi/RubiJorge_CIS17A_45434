@@ -14,7 +14,7 @@
 #ifndef BATTLESHIP_H
 #define BATTLESHIP_H
 
-class Battleship {
+class Battleship : public Ship {
 public:
     Battleship();
     Battleship(const Battleship& orig);

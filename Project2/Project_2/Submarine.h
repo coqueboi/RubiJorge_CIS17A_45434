@@ -14,7 +14,7 @@
 #ifndef SUBMARINE_H
 #define SUBMARINE_H
 
-class Submarine {
+class Submarine : public Ship {
 public:
     Submarine();
     Submarine(const Submarine& orig);
