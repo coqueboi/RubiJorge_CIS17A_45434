@@ -1,0 +1,3 @@
+High scores: AAA with 23 moves! 
+High scores: BBB with 24 moves! 
+High scores: CCC with 61 moves! 

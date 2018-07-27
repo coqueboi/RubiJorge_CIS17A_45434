@@ -8,7 +8,6 @@
  * File:   NumDays.h
  * Author: Cokes PC
  *
- * Created on July 25, 2018, 8:40 PM
  */
 
 #ifndef NUMDAYS_H
@@ -17,10 +16,69 @@
 class NumDays {
 public:
     NumDays();
-    NumDays(const NumDays& orig);
+    NumDays(int);
+    Numdays(float);
     virtual ~NumDays();
+    
+    //Convert number of work hours to number of work days
+    void convert();
+    //Print conversions
+    void print();
+    
+    //Inline functions for practice
+    
+    //Overload + operator
+    NumDays operator+(const NumDays &right){
+        NumDays temp;
+        temp.hours = hours + right.hours;
+        return temp;
+    }
+    //Overload - operator
+    NumDays operator-(const NumDays &right){
+        NumDays temp;
+        temp.hours = hours - right.hours;
+        return temp;
+    }
+    //Overload prefix and postfix ++ operators
+    NumDays operator++(){
+        //Prefix
+        ++hours;
+        //Automatically recalculate number of days
+        convert();
+        return *this;
+    }
+    NumDays operator++(int){
+        //Postfix
+        NumDays temp(hours);
+        hours++;
+        //Automatically recalculate number of days
+        convert();
+        return temp;
+    }
+    NumDays operator--(){
+        //Prefix
+        --hours;
+        //Automatically recalculate number of days
+        convert();
+        return *this;
+    }
+    NumDays operator--(int){
+        //Postfix
+        NumDays temp(hours);
+        hours--;
+        //Automatically recalculate number of days
+        convert();
+        return temp;
+    }
+    
+    
 private:
-
+    //Hold the number of work hours
+    int hours;
+    //Hold the number of work days
+    float days;
+    
+    
 };
 
 #endif /* NUMDAYS_H */

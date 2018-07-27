@@ -8,17 +8,32 @@
  * File:   NumDays.cpp
  * Author: Cokes PC
  * 
- * Created on July 25, 2018, 8:40 PM
  */
-
+using namespace std;
+#include <iostream>
 #include "NumDays.h"
 
+
 NumDays::NumDays() {
+    hours = 0;
+    days = 0;
 }
 
-NumDays::NumDays(const NumDays& orig) {
+NumDays::NumDays(int hours) {
+    this->hours = hours;
+}
+NumDays::Numdays(float days) {
+    this->days = days;
 }
 
 NumDays::~NumDays() {
 }
+//Calculate the number of workdays
+void NumDays::convert(){
 
+    days = hours / 8.0f;
+}
+//Output the conversions
+void NumDays::print(){
+    cout << "The number of workdays is " << days << endl;
+}
