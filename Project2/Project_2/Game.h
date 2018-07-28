@@ -15,12 +15,39 @@
 #define GAME_H
 
 class Game {
+    friend class Ship;
 public:
     Game();
     Game(const Game& orig);
     virtual ~Game();
+    
+    //Outputs a player introduction and rules
+    void intro();
+    
+    //Executes and maintains game processes
+    void play();
+    
+    //Calls for ship and board initialization functions
+    void init();
+    
+    //Initializes ship values
+    void shipInit();
+    
+    //Generates & Initializes the playing board
+    void bordInit();
+    
+    //Generates complete ship on the playing board
+    void shipGen();
+    
+    //Print the playing board in its current state
+    void print();
+    
+    
+    ///***Don't forget to overload operators***/// 
+    
 private:
-
+    
+    
 };
 
 #endif /* GAME_H */

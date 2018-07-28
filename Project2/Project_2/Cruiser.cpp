@@ -10,8 +10,9 @@
  * 
  * Created on July 26, 2018, 7:59 PM
  */
-
+#include "Ship.h"
 #include "Cruiser.h"
+using namespace std;
 
 Cruiser::Cruiser() {
     name = "Cruiser";
@@ -27,9 +28,29 @@ Cruiser::Cruiser(const Cruiser& orig) {
     length = orig.length;
     orient = orig.orient;
     hp = orig.hp;
-    coords = orig.coords;
+    *coords = *orig.coords;
 }
 
 Cruiser::~Cruiser() {
 }
 
+///***Getters***///
+void Cruiser::setCoords(){
+    coords[0] = rand() % 10;
+    coords[1] = rand() % 10;
+}
+string Cruiser::getName(){
+    return name;
+}
+int Cruiser::getLength(){
+    return length;
+}
+int Cruiser::getOrient(){
+    return orient;
+}
+int Cruiser::getHp(){
+    return hp;
+}
+int *Cruiser::getCoords(){
+    return coords;
+}

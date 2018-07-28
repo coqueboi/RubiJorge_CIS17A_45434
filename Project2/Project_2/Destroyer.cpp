@@ -10,8 +10,9 @@
  * 
  * Created on July 26, 2018, 7:59 PM
  */
-
+#include "Ship.h"
 #include "Destroyer.h"
+using namespace std;
 
 Destroyer::Destroyer() {
     name = "Destroyer";
@@ -27,9 +28,29 @@ Destroyer::Destroyer(const Destroyer& orig) {
     length = orig.length;
     orient = orig.orient;
     hp = orig.hp;
-    coords = orig.coords;
+    *coords = *orig.coords;
 }
 
 Destroyer::~Destroyer() {
 }
 
+///***Getters***///
+void Destroyer::setCoords(){
+    coords[0] = rand() % 10;
+    coords[1] = rand() % 10;
+}
+string Destroyer::getName(){
+    return name;
+}
+int Destroyer::getLength(){
+    return length;
+}
+int Destroyer::getOrient(){
+    return orient;
+}
+int Destroyer::getHp(){
+    return hp;
+}
+int *Destroyer::getCoords(){
+    return coords;
+}

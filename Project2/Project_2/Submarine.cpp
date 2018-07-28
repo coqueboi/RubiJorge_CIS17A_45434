@@ -10,8 +10,9 @@
  * 
  * Created on July 26, 2018, 7:59 PM
  */
-
+#include "Ship.h"
 #include "Submarine.h"
+using namespace std;
 
 Submarine::Submarine() {
     name = "Submarine";
@@ -27,9 +28,28 @@ Submarine::Submarine(const Submarine& orig) {
     length = orig.length;
     orient = orig.orient;
     hp = orig.hp;
-    coords = orig.coords;
+    *coords = *orig.coords;
 }
 
 Submarine::~Submarine() {
 }
-
+///***Getters***///
+void Submarine::setCoords(){
+    coords[0] = rand() % 10;
+    coords[1] = rand() % 10;
+}
+string Submarine::getName(){
+    return name;
+}
+int Submarine::getLength(){
+    return length;
+}
+int Submarine::getOrient(){
+    return orient;
+}
+int Submarine::getHp(){
+    return hp;
+}
+int *Submarine::getCoords(){
+    return coords;
+}

@@ -11,7 +11,12 @@
  * Created on July 26, 2018, 7:58 PM
  */
 
+#include <iostream>
+#include <cstdlib>
+
 #include "Battleship.h"
+#include "Ship.h"
+using namespace std;
 
 Battleship::Battleship() {
     name = "Battleship";
@@ -27,9 +32,28 @@ Battleship::Battleship(const Battleship& orig) {
     length = orig.length;
     orient = orig.orient;
     hp = orig.hp;
-    coords = orig.coords;
+    *coords = *orig.coords;
 }
 
 Battleship::~Battleship() {
 }
-
+///***Getters***///
+void Battleship::setCoords(){
+    coords[0] = rand() % 10;
+    coords[1] = rand() % 10;
+}
+string Battleship::getName(){
+    return name;
+}
+int Battleship::getLength(){
+    return length;
+}
+int Battleship::getOrient(){
+    return orient;
+}
+int Battleship::getHp(){
+    return hp;
+}
+int *Battleship::getCoords(){
+    return coords;
+}

@@ -6,6 +6,8 @@
  
 //System Libraries Here
 #include <iostream>
+#include "Game.h"
+
 using namespace std;
  
 //User Libraries Here
@@ -19,7 +21,8 @@ using namespace std;
 int main(int argc, char** argv) {
     //Seed random number
     srand(static_cast<unsigned int>(time(0)));
- 
+    Game run;
+    run.print();
     //Exit
     return 0;
 }
