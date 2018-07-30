@@ -5,11 +5,11 @@
  * Created on July 26, 2018, 7:58 PM
  */
 #include "Ship.h"
-
 #ifndef AIRCRAFTCARRIER_H
 #define AIRCRAFTCARRIER_H
 
 class AircraftCarrier : public Ship {
+    friend class Game;
 public:
     AircraftCarrier();
     AircraftCarrier(const AircraftCarrier& orig);

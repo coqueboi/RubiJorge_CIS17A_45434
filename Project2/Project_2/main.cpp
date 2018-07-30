@@ -21,8 +21,9 @@ using namespace std;
 int main(int argc, char** argv) {
     //Seed random number
     srand(static_cast<unsigned int>(time(0)));
-    Game run;
-    run.print();
+    Game game;
+    game.play();
+    
     //Exit
     return 0;
 }

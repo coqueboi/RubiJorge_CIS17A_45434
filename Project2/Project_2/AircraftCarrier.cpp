@@ -1,11 +1,4 @@
-/* 
- * File:   AircraftCarrier.cpp
- * Author: Cokes PC
- * 
- * Created on July 26, 2018, 7:58 PM
- */
 #include "AircraftCarrier.h"
-#include "Ship.h"
 using namespace std;
 
 //Constructor
@@ -14,8 +7,13 @@ AircraftCarrier::AircraftCarrier() {
     length = 5;
     orient = rand() % 2;
     hp = 5;
-    coords[0] = rand() % 10;
-    coords[1] = rand() % 10;
+    coords[0] = 0;
+    coords[1] = 0;
+    //Initialize placement coordinate array
+    place = new int[length * 2]; 
+    for(int i = 0; i < (length*2); i++){
+        place[i] = 0;
+    }
 }
 //Copy constructor
 AircraftCarrier::AircraftCarrier(const AircraftCarrier& orig) {

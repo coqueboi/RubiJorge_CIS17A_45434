@@ -1,16 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Cruiser.cpp
- * Author: Cokes PC
- * 
- * Created on July 26, 2018, 7:59 PM
- */
-#include "Ship.h"
 #include "Cruiser.h"
 using namespace std;
 
@@ -19,8 +6,13 @@ Cruiser::Cruiser() {
     length = 3;
     orient = rand() % 2;
     hp = 3;
-    coords[0] = rand() % 10;
-    coords[1] = rand() % 10;
+    coords[0] = 0;
+    coords[1] = 0;
+    //Initialize placement coordinate array
+    place = new int[length * 2]; 
+    for(int i = 0; i < (length*2); i++){
+        place[i] = 0;
+    }
 }
 
 Cruiser::Cruiser(const Cruiser& orig) {
