@@ -1,0 +1,16 @@
+<map id="Ship.h" name="Ship.h">
+<area shape="rect" id="node2" href="$_aircraft_carrier_8h.html" title="AircraftCarrier.h" alt="" coords="55,80,167,107"/>
+<area shape="rect" id="node4" href="$_game_8h.html" title="Game.h" alt="" coords="285,155,353,181"/>
+<area shape="rect" id="node7" href="$_battleship_8h.html" title="Battleship.h" alt="" coords="191,80,282,107"/>
+<area shape="rect" id="node9" href="$_cruiser_8h.html" title="Cruiser.h" alt="" coords="357,80,431,107"/>
+<area shape="rect" id="node11" href="$_destroyer_8h.html" title="Destroyer.h" alt="" coords="456,80,545,107"/>
+<area shape="rect" id="node13" href="$_submarine_8h.html" title="Submarine.h" alt="" coords="569,80,664,107"/>
+<area shape="rect" id="node15" href="$_ship_8cpp.html" title="Ship.cpp" alt="" coords="688,80,761,107"/>
+<area shape="rect" id="node3" href="$_aircraft_carrier_8cpp.html" title="AircraftCarrier.cpp" alt="" coords="5,155,132,181"/>
+<area shape="rect" id="node5" href="$_game_8cpp.html" title="Game.cpp" alt="" coords="226,229,309,256"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title="main.cpp" alt="" coords="333,229,407,256"/>
+<area shape="rect" id="node8" href="$_battleship_8cpp.html" title="Battleship.cpp" alt="" coords="156,155,261,181"/>
+<area shape="rect" id="node10" href="$_cruiser_8cpp.html" title="Cruiser.cpp" alt="" coords="378,155,466,181"/>
+<area shape="rect" id="node12" href="$_destroyer_8cpp.html" title="Destroyer.cpp" alt="" coords="491,155,593,181"/>
+<area shape="rect" id="node14" href="$_submarine_8cpp.html" title="Submarine.cpp" alt="" coords="618,155,727,181"/>
+</map>

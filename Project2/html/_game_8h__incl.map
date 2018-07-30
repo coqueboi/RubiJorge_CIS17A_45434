@@ -1,0 +1,8 @@
+<map id="Game.h" name="Game.h">
+<area shape="rect" id="node3" href="$_ship_8h.html" title="Ship.h" alt="" coords="194,155,253,181"/>
+<area shape="rect" id="node4" href="$_aircraft_carrier_8h.html" title="AircraftCarrier.h" alt="" coords="42,80,154,107"/>
+<area shape="rect" id="node5" href="$_battleship_8h.html" title="Battleship.h" alt="" coords="178,80,269,107"/>
+<area shape="rect" id="node6" href="$_submarine_8h.html" title="Submarine.h" alt="" coords="293,80,388,107"/>
+<area shape="rect" id="node7" href="$_cruiser_8h.html" title="Cruiser.h" alt="" coords="413,80,487,107"/>
+<area shape="rect" id="node8" href="$_destroyer_8h.html" title="Destroyer.h" alt="" coords="512,80,601,107"/>
+</map>

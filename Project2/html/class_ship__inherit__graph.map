@@ -1,0 +1,7 @@
+<map id="Ship" name="Ship">
+<area shape="rect" id="node2" href="$class_aircraft_carrier.html" title="AircraftCarrier" alt="" coords="5,80,107,107"/>
+<area shape="rect" id="node3" href="$class_battleship.html" title="Battleship" alt="" coords="131,80,211,107"/>
+<area shape="rect" id="node4" href="$class_cruiser.html" title="Cruiser" alt="" coords="235,80,298,107"/>
+<area shape="rect" id="node5" href="$class_destroyer.html" title="Destroyer" alt="" coords="322,80,401,107"/>
+<area shape="rect" id="node6" href="$class_submarine.html" title="Submarine" alt="" coords="425,80,509,107"/>
+</map>
